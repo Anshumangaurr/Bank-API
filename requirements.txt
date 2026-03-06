@@ -1,0 +1,6 @@
+Flask
+graphene
+flask-graphql
+SQLAlchemy
+gunicorn
+pytest
