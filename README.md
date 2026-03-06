@@ -59,24 +59,6 @@ Simple Python API server providing both GraphQL and REST interfaces for bank and
    pytest -q
    ```
 
-## Deployment (Heroku example)
-
-1. Ensure Heroku CLI is installed and you are logged in.
-2. Create a new Heroku app:
-   ```sh
-   heroku create my-bank-api
-   ```
-3. Set the buildpacks (Python is automatic) and push:
-   ```sh
-   git add .
-   git commit -m "prepare for deployment"
-   git push heroku main
-   ```
-4. The `Procfile` will start `gunicorn app:app`.  Heroku will provide a `DATABASE_URL` for a Postgres database.
-5. Run migrations/seed if necessary:
-   ```sh
-   heroku run python -c "from models import seed_data; seed_data()"
-   ```
 
 ## Code quality & extensions
 
